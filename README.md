@@ -1,5 +1,5 @@
 ## Describe
-	**This version only verifies the Single line n301 radar with dual ports**
+	**This version only verifies the Single line n301 radar**
 	**The driver is developed with ros1, and supports running under Ubuntu 14.04, Ubuntu 16.04, and Ubuntu 18.04**
 
 ## Set up the workspace
@@ -13,7 +13,7 @@ tar –xvf lidar_n301_V2.01.tar
 ```
 cd ~/lidar_ws
 catkin_make
-```	
+```
 
 ## Run
 ```

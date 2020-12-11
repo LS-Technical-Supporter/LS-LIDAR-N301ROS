@@ -1,5 +1,5 @@
 ## 描述
-	**本版本只验证了单线N301雷达双端口**
+	**本版本只验证了单线N301雷达**
 	**驱动用ros1进行开发，支持ubuntu14.04,ubuntu16.04,ubuntu18.04下运行**
 ## 建立工作空间
 ```
@@ -11,8 +11,8 @@ tar –xvf lidar_n301_V2.01.tar
 ```
 cd ~/lidar_ws
 catkin_make
-```	
-	
+```
+
 ## 运行: 
 ```
 source ~/lidar_ws /devel/setup.bash
