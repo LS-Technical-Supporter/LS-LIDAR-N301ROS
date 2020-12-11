@@ -1,6 +1,6 @@
 ## 描述
 	**本版本只验证了单线N301雷达**
-	**驱动用ros1进行开发，支持ubuntu14.04,ubuntu16.04,ubuntu18.04下运行**
+	**驱动用ros1进行开发，支持ubuntu14.04,ubuntu16.04,ubuntu18.04系统下运行**
 ## 建立工作空间
 ```
 mkdir -p ~/lidar_ws/src
