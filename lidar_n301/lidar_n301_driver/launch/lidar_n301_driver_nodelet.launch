@@ -1,0 +1,16 @@
+<launch>
+
+  <!-- start nodelet manager and load driver nodelet -->
+  <node pkg="nodelet" type="nodelet"
+    name="lidar_n301_nodelet_manager"
+    args="manager" output="screen"/>
+
+  <node pkg="nodelet" type="nodelet"
+    name="lidar_n301_driver_nodelet"
+    args="load lidar_n301_driver/LidarN301DriverNodelet
+    lidar_n301_nodelet_manager" >
+    <param name="frame_id" value="lidar"/>
+    <param name="device_ip" value="192.168.1.222"/>
+  </node>
+
+</launch>

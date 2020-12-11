@@ -1,0 +1,27 @@
+<launch>
+
+  <node pkg="lidar_n301_driver" type="lidar_n301_driver_node" name="lidar_n301_driver_node" output="screen">
+    <param name="frame_id" value="laser_link"/>
+    <param name="device_ip" value="192.168.1.222"/>
+    <param name="device_port" value="2368"/>
+    <param name="add_multicast" value="false"/>
+    <param name="group_ip" value="224.1.1.2"/>
+  </node>
+
+  <node pkg="lidar_n301_decoder" type="lidar_n301_decoder_node" name="lidar_n301_decoder_node" output="screen">
+    <param name="child_frame_id" value="laser_link"/>
+    <param name="point_num" value="2000"/>
+    <param name="angle_disable_min" value="0"/>
+    <param name="angle_disable_max" value="0"/>
+    <param name="min_range" value="0.3"/>
+    <param name="max_range" value="100.0"/>
+    <param name="use_gps_ts" value="false"/>
+    <param name="gps_correct" value="true"/>
+    <param name="publish_point_cloud" value="true"/>
+    <param name="filter_scan_point" value="true"/>
+  </node>
+  
+
+  <!--node name="rviz" pkg="rviz" type="rviz" args="-d $(find lidar_n301_decoder)/launch/lidar_n301.rviz" output="screen"/-->
+
+</launch>
